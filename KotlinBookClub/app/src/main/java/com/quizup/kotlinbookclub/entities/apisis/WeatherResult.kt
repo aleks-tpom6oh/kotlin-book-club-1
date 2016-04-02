@@ -1,4 +1,4 @@
-package com.quizup.kotlinbookclub.entities
+package com.quizup.kotlinbookclub.entities.apisis
 
 /**
  * Created by olafurorn on 3/22/16.
