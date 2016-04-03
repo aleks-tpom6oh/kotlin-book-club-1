@@ -20,6 +20,6 @@ class ForecastDataMapper() {
     }
 
     private fun convertApiForecastToDomainForecast(apiForecast: ApiForecast): Forecast {
-        return Forecast(apiForecast.dt_txt, apiForecast.weather[0].description, apiForecast.main.temp_min, apiForecast.main.temp_max)
+        return Forecast(apiForecast.dt_txt.substringBeforeLast(":"), apiForecast.weather[0].description, apiForecast.main.temp_min, apiForecast.main.temp_max)
     }
 }

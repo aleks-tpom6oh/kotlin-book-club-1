@@ -14,7 +14,7 @@ class ApiForecastRequest(val cityName: String): Command<ForecastResult> {
 
     companion object {
         val appId = "d1023d268e9e55dd15d7ec661387c8f8"
-        val url = "http://api.openweathermap.org/data/2.5/forecast?mode=json&appid=${appId}&q=";
+        val url = "http://api.openweathermap.org/data/2.5/forecast?mode=json&units=metric&appid=${appId}&q=";
     }
 
     override fun execute(): ForecastResult {
