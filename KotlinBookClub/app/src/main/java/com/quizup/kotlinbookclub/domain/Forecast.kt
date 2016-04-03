@@ -8,4 +8,4 @@ package com.quizup.kotlinbookclub.domain
 
 data class ForecastList(val city: String, val country: String, val dailyForecast: List<Forecast>)
 
-data class Forecast(val date: String, val description: String, val high: Double, val low: Double)
+data class Forecast(val date: String, val description: String, val low: Double, val high: Double)
